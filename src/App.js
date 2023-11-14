@@ -8,6 +8,7 @@ import { themeSettings } from 'theme';
 
 import Dashboard from 'scenes/dashboard';
 import Products from 'scenes/products';
+import Customers from 'scenes/customers';
 import Layout from 'scenes/layout';
 
 const App = () => {
@@ -23,6 +24,7 @@ const App = () => {
               <Route path='/' element={<Navigate to='/dashboard' replace />} />
               <Route path='/dashboard' element={<Dashboard />} />
               <Route path='/products' element={<Products />} />
+              <Route path='/customers' element={<Customers />} />
             </Route>
           </Routes>
         </ThemeProvider>
